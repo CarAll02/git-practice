@@ -3,43 +3,63 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  color:#6c6b6b;
 }
 
-.header{
-  width:100%; /*横幅一杯*/
-  height:120px; /*高さ120px*/
-  background-color:red;/*背景色レッド*/
+a{
+  text-decoration: none;
 }
 
-.header-top{
-  width:100%;/*横幅一杯*/
-  height:70px;/*高さ70px*/
-  background-color:hotpink;/*背景色ホットピンク*/
+header{
+  width:90%;
+  padding:15px 0;
+  margin:0 auto;
+  text-align: center;
 }
 
-.header-bottom{
-  width:100%;/*横幅一杯*/
-  height:50px;/*高さ50px*/
-  background-color:pink;/*背景色ピンク*/
+header .heading{/* headerタグ内のheadingクラスにのみ反映される */
+  font-size:32px;
+}
+
+.nav-list{
+  text-align: center;
+  padding:10px 0;
+  margin:0 auto;
+}
+
+.nav-list-item{
+  list-style: none;
+  display: inline-block;
+  margin:0 20px;
 }
 
 .main-visual{
   width:100%;/*横幅一杯*/
   height:300px;/*高さ300px*/
-  background-color:orange;/*背景色オレンジ*/
+  background-image: url(img/mv.jpg);
+  background-size: cover;/* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center;/* 背景画像を中央に配置 */
 }
 
 .main-visual-content{
-  width:350px;/*横幅350px*/
-  height:300px;/*高さ300px*/
-  background-color:gold;/*背景色ゴールド*/
+  width:40%;/*横幅40%*/
+  height:300px;/*親の高さに揃える*/
+  background-color: rgba(0,0,0,0.5);/* 背景色を半透明の黒にする */
+  text-align: center;/* 文字を中央揃えにする */
+  padding-top: 105px;/* 上側の内側余白で垂直方向の位置を調整 */
+}
+
+.main-visual-text{
+  color:#fff; /* 文字色を白に変更 */
+}
+
+.main-visual-name{
+  margin-top: 30px; /* 上側の外側の余白 */
+  color: #fff; /* 文字色を白に変更 */
 }
 
 .main{
   width:840px;/*横幅840px*/
-  /*高さ・バックグラウンドの指定を解除*/
-  /*height:1400px;/*高さ1400px*/
-  /*background-color:green;/*背景色グリーン*/
   display:flex;/*Flexboxの利用*/
   justify-content:center;/*子要素の横並び・中央寄せ*/
   margin:0 auto;/*中央寄せ（左右に余白が無いと出来ない)*/
@@ -48,17 +68,21 @@
 .blog{
   width:600px;/*横幅600px*/
   height:1400px;/*高さ1400px*/
-  background-color:limegreen;/*背景色ライムグリーン*/
 }
 
 .sideber{
   width:240px;/*横幅240px*/
   height:1400px;/*高さ1400px*/
-  background-color:palegreen;/*背景色ペールグリーン*/
 }
 
-.footer{
-  width:100%;/*横幅一杯*/
-  height:120px;/*高さ120px*/
-  background-color:blue;/*背景色ブルー*/
+footer{
+  width:100%;
+  height:120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text{
+  color:#fff;
 }
