@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*回答にはa無し*/
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 400px;
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  /*ここcenter無くてもOK*/
+}
+
+header .heading{
+  padding: 20px;
+}
+
+/*回答ではpadding消してmargin:50 auto;で対応。下の各アイテムのpaddingのせいで上の余白80になりそうな気がするけどどうなんやろうか*/
+main{
+  width:840px;
+  display: flex;
+  justify-content:center;
+  margin: 0 auto;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+
+/*これhtmlのもの諸共不要*/
+.blog{
+  width: 840px;
+}
+
+/*回答では一括ではなく個別で設定*/
+.blog-item{
+  width:840;
+  padding: 30px 0;
+  border-bottom: 1px solid;
+}
+
