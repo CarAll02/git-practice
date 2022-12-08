@@ -1,0 +1,48 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header{
+  height:50px;
+  background-color:#FF9A4B;
+}
+
+main{
+  display:flex;
+  justify-content:center;
+  margin:50px 0;
+}
+
+.box{
+  width:300px;
+  background-color:#EEEEEE;
+  margin-left: 30px;
+}
+
+.box:first-child{
+  margin-left:0;
+}
+
+.picture{
+  height:150px;
+  background-size: auto 150px;
+}
+
+.flow01{
+  background-image:url(img/flow01.png);
+}
+
+.flow02{
+  background-image:url(img/flow02.png);
+}
+
+.flow03{
+  background-image:url(img/flow03.png);
+}
+
+footer{
+  height:50px;
+  background-color:#AAAAAA;
+}
