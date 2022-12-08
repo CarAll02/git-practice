@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/*今回はこの際上のも省略して良い*/
+
+/*全部不要
+.social i{
+  width:32px;
+  height:32px;
+  display:inline-block;
+  margin-right:32px;
+}*/
+
+/*上手くいかなかった為回答からコピペ*/
+.fab{
+  font-size:32px;
+}
+
+/*※失敗理由　１、class指定がスペースで2つに分かれていたことに気づいていない　２、アイコンが文字扱いだと分かっていなかった。<i>タグなのでよく考えればわかったはず*/
