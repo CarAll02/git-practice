@@ -151,6 +151,7 @@ margin-right: 30px;
 width: 230px;
 }
 
+/*これ効いていないみたい。原因不明。*/
 .common-heading{
   border-bottom: 8px solid #7f7f7;
   text-align:center;
@@ -228,25 +229,81 @@ footer{
   color:#fff;
 }
 
-/*全ての画面サイズで適用される設定*/
-.social{
-  color:black;
-}
-/*タブレット横置きサイズ（1024px）以下の際に適用される設定*/
-@media screen and (max-width:1024px){
-  .social i {
-    color:green;
-  }
-}
-/*タブレット縦置きサイズ（768px）以下の際に適用される設定*/
-@media screen and (max-width:768px){
-  .social i {
-    color:red;
-  }
-}
-/*スマートフォンサイズ（425px）以下の際に適用される設定*/
 @media screen and (max-width:425px){
-  .social i {
-    color:blue;
+  headre{
+    width:100%;
   }
+
+/*回答ではdisplay:none;で表示消している。ていうかなぜフォントサイズで消した？？？*/
+  .fab{
+    font-size:0;
+  }
+
+  .nav-list-item{
+    display:block;
+    /*回答ではwidth:100%; margin:0 0 10px 0;*/
+  }
+
+  .main-visual-content{
+    width:100%;
+  }
+
+  main{
+    width:100%;
+    display: block;
+  }
+
+  .blog{
+  width:100%;
+  }
+
+  .blog-item{
+    padding-bottom:0;
+  }
+
+/*これもnoneで消すなりすればよかったんじゃないかな。回答には記述見当たらなくて良く分からず*/
+  .category{
+    font-size:0;
+    padding:0;
+    border-radius:0;
+  }
+
+  .blog-image{
+    /*回答はwidth:49%;。横幅変わる事かんがえたらこれも％指定するべきだった*/
+    /*width:180px; ※これは自分の回答*/
+    width:49%;
+  }
+
+/*本来不要。元のコードがおかしかった事に気づかず書いた謎の産物*/
+  .common-heading{
+    border-bottom:8px solid #f7f7f7;
+  }
+
+  .sidebar{
+    width:100%;
+    /*下のマージンは回答だとパギネーションのマージン50%を使用*/
+    margin-top:70px;
+  }
+
+  .sidebar-contents{
+    /*回答ではpadding-leftとright:3%;で実装*/
+    width:95%;
+    margin:0 auto;
+  }
+
+/*インスタのマージンは回答だと無駄な記述を消して、奇数のmargin:4%;に集約した模様。*/
+  .instagram-box{
+    width:48%;
+    padding-top:48%;
+    margin-bottom:4%;
+  }
+
+  .instagram-box:nth-child(odd){
+    margin:0 4% 4% 0;
+  }
+
+  .categories-text{
+    border-bottom: 1px solid #f7f7f7;
+  }
+
 }
