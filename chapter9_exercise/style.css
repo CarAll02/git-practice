@@ -4,6 +4,11 @@
   box-sizing:border-box;
 }
 
+/*フォント指定不要*/
+h3,p{
+  font-family: sans-serif;
+}
+
 header{
   height:50px;
   background-color:#FF9A4B;
@@ -11,7 +16,7 @@ header{
 
 main{
   display:flex;
-  justify-content:center;
+  justify-content:center;/*回答では未使用*/
   margin:50px 0;
 }
 
@@ -19,15 +24,29 @@ main{
   width:300px;
   background-color:#EEEEEE;
   margin-left: 30px;
+  position:relative;
 }
 
 .box:first-child{
   margin-left:0;
 }
 
+.box-in-box{
+  margin:10px;
+}
+
+.step{
+  position:absolute;
+  top:0;
+  left:0;
+  color: white;
+  background-color: #FF9A4B;
+}
+
 .picture{
   height:150px;
-  background-size: auto 150px;
+  background-size:cover;
+  background-position:center;
 }
 
 .flow01{
@@ -41,6 +60,46 @@ main{
 .flow03{
   background-image:url(img/flow03.png);
 }
+
+/*上記の部分回答では以下の感じ。全然違う。.step-img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
+*/
+
+section{
+  margin-top:15px;
+  /*回答ではsection未使用の為、下のtitleとまとめて記述*/
+}
+
+.title{
+  margin-bottom:5px;
+}
+
 
 footer{
   height:50px;
