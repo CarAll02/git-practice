@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header{
+  /*width指定不要*/
+  width:100%;
+  padding:30px 20px;
+  background-color:#ff00ff;
+  display:flex;
+  justify-content:flex-end;
+}
+
+/*回答ではclass名指定ではなく、.XXX > div指定*/
+.header-item{
+  height:70px;
+  flex-basis:140px;
+  background-color:#fbb3ff;
+  margin:0 10px;
+}
+
+.header-item:first-child{
+  margin-right:auto;
+}
+
+main{
+  display:flex;
+  justify-content:center;
+}
+
+/*回答ではクラス名指定（クラス名分けた為）*/
+.main-item1:first-child{
+  width:300px;
+  background-color:#d8ffb6;
+}
+
+/*回答ではクラス名指定（クラス名分けた為）*/
+.main-item1:nth-child(2){
+  max-width:700px;
+  flex-grow:1;
+  padding:20px;
+  background-color:#00b522;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;/*記述抜けていたため追記*/
+}
+
+/*回答ではclass名指定ではなく、.XXX > div指定*/
+.main-item2{
+  flex-basis:200px;
+  height:130px;
+  margin:10px;
+  background-color:#fff75a;
+}
+
+footer{
+  /*width指定不要*/
+  width:100%;
+  padding:20px;
+  background-color:#52a1ff;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/*回答ではclass名指定ではなく、.XXX > div指定*/
+.footer-item{
+  height:40px;
+  max-width:600px;
+  flex-basis:45%;
+  margin:10px;
+  background-color:#b6e7ff;
+}
+
