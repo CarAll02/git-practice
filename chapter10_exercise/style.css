@@ -7,6 +7,7 @@
 header {
   height: 50px;
   background-color: #ff9a4b;
+  min-width: 960px;
 }
 
 main {
@@ -63,9 +64,14 @@ main {
 footer {
   height: 50px;
   background-color: #aaa;
+  min-width: 960px;
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
+  header,footer{
+    width: 100%;
+    min-width: 0;
+  }
 
   main{
     width:100%;
@@ -74,9 +80,11 @@ footer {
 
   .step-box{
     width:90%;
-    margin:20px auto;
+    /*margin:20px auto;*/
+    margin: 0 auto 20px;
   }
 
   .step-box:last-child{
     margin-right:auto;
   }
+}
