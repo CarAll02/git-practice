@@ -1,2 +1,5 @@
 line = gets.split(' ')
-p line
+# p line
+line.each do |word|
+  p word
+end
